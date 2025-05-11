@@ -1,0 +1,216 @@
+/* Hero Section Styles */
+.heroSection {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  background-image: linear-gradient(to bottom, white, #ebf5ff);
+  overflow: hidden;
+}
+
+.heroBackground {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.heroOverlay {
+  position: absolute;
+  inset: 0;
+  background-image: linear-gradient(to bottom, transparent, rgba(235, 245, 255, 0.8));
+}
+
+.heroBackgroundImage {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.25;
+}
+
+.heroContent {
+  position: relative;
+  z-index: 10;
+  margin: 0 auto;
+  padding: 0 1rem;
+  text-align: center;
+  max-width: 80rem;
+}
+
+.heroTitle {
+  font-size: 2.25rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+}
+
+.heroTitleGradient {
+  background-image: linear-gradient(to right, #2563eb, #4f46e5);
+  background-clip: text;
+  color: transparent;
+  display: block;
+}
+
+.heroTitleSecondary {
+  display: block;
+  margin-top: 0.5rem;
+}
+
+.heroDescription {
+  margin: 0.75rem auto;
+  max-width: 28rem;
+  font-size: 1rem;
+  color: #4b5563;
+}
+
+.heroButtonContainer {
+  margin: 2.5rem auto 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.scrollIndicator {
+  position: absolute;
+  bottom: 4rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Categories Section Styles */
+.categoriesSection {
+  background-color: white;
+  padding: 5rem 0;
+}
+
+.sectionContainer {
+  margin: 0 auto;
+  max-width: 80rem;
+  padding: 0 1rem;
+}
+
+.sectionHeader {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.sectionTitle {
+  font-size: 1.875rem;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 1rem;
+}
+
+.sectionDivider {
+  height: 0.25rem;
+  width: 5rem;
+  background-color: #3b82f6;
+  border-radius: 9999px;
+  margin: 0 auto;
+}
+
+.sectionDescription {
+  margin-top: 1.5rem;
+  font-size: 1.25rem;
+  color: #6b7280;
+}
+
+.categoriesGrid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 2rem;
+}
+
+.categoryCard {
+  position: relative;
+  padding: 2rem;
+  background-color: white;
+  border-radius: 0.75rem;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.categoryCard:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+
+.categoryIcon {
+  display: flex;
+  height: 4rem;
+  width: 4rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px;
+  background-image: linear-gradient(to bottom right, #3b82f6, #4f46e5);
+  color: white;
+}
+
+.categoryContent {
+  margin-top: 1.5rem;
+}
+
+.categoryTitle {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #111827;
+}
+
+.categoryDescription {
+  margin-top: 0.75rem;
+  font-size: 1rem;
+  color: #6b7280;
+}
+
+.categoryLink {
+  display: inline-flex;
+  align-items: center;
+  margin-top: 1.5rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #3b82f6;
+}
+
+.categoryLink svg {
+  margin-left: 0.5rem;
+  height: 1rem;
+  width: 1rem;
+}
+
+/* Responsive styles */
+@media (min-width: 640px) {
+  .heroButtonContainer {
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+  }
+  
+  .heroTitle {
+    font-size: 3rem;
+  }
+  
+  .heroDescription {
+    font-size: 1.125rem;
+  }
+  
+  .categoriesGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .heroTitle {
+    font-size: 3.75rem;
+  }
+  
+  .heroDescription {
+    font-size: 1.25rem;
+    max-width: 48rem;
+  }
+  
+  .categoriesGrid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+} 

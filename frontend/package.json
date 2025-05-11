@@ -1,0 +1,55 @@
+{
+  "name": "modern-stationery-store",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "author": {
+    "name": "Phạm Nguyễn Chu Nguyên",
+    "email": "21050043@student.bdu.edu.vn"
+  },
+  "description": "Modern Stationery Store Frontend Application",
+  "license": "ISC",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "eslint .",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@hookform/resolvers": "^3.3.4",
+    "axios": "^1.8.4",
+    "clsx": "^2.1.0",
+    "framer-motion": "^12.7.4",
+    "lucide-react": "^0.344.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-hook-form": "^7.51.0",
+    "react-router-dom": "^6.22.3",
+    "react-toastify": "^11.0.5",
+    "tailwind-merge": "^2.2.1",
+    "zod": "^3.22.4"
+  },
+  "devDependencies": {
+    "@types/body-parser": "^1.19.5",
+    "@types/compression": "^1.7.5",
+    "@types/express": "^5.0.1",
+    "@types/http-errors": "^2.0.4",
+    "@types/mime": "^3.0.4",
+    "@types/node": "^22.14.1",
+    "@types/qs": "^6.9.18",
+    "@types/range-parser": "^1.2.7",
+    "@types/react": "^18.2.64",
+    "@types/react-dom": "^18.2.21",
+    "@types/send": "^0.17.4",
+    "@types/serve-static": "^1.15.7",
+    "@vitejs/plugin-react": "^4.2.1",
+    "autoprefixer": "^10.4.18",
+    "eslint": "^8.57.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.5",
+    "postcss": "^8.4.35",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5.4.2",
+    "vite": "^5.1.4"
+  }
+}
