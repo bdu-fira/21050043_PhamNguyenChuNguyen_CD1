@@ -49,3 +49,15 @@ npm run dev
 
 ### backend sẽ chạy ở http://localhost:5000/
 ### frontend sẽ chạy ở http://localhost:5173/
+
+# Lưu ý quan trọng nếu muón kết nối SQL Server data:
+- Chỉnh sửa tên tệp .env.example trong thư mục backend (\backend\.env.example) thành .env
+- Sau đó đặt các thông tin trong tệp .env đó như sau:
+
+```bash
+DB_HOST=DELL5580\SQLEXPRESS
+DB_PORT=1433
+DB_NAME=shopdungcuhoctap
+DB_USER=sa
+DB_PASSWORD=21050043
+```
